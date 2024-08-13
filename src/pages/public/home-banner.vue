@@ -1,19 +1,29 @@
 <template>
   <div class="px-4 sm:px-0">
     <div class="mb-6 sm:mb-10">
-      <Carousel :autoplay="2000" :wrap-around="true">
+      <Carousel :autoplay="7000" :wrap-around="true">
         <Slide
           v-for="slide in 1"
           :key="slide"
           class="rounded-xl sm:rounded-3xl"
         >
           <div class="max-w-full carousel__item rounded-xl sm:rounded-3xl">
+            <video autoplay="autoplay">
+              <source
+                src="/src/assets/Banners/SEATS OPEN FOR.mp4"
+                type="video/mp4"
+                class="w-full h-auto"
+              />
+            </video>
+          </div>
+          <!-- <div class="max-w-full carousel__item rounded-xl sm:rounded-3xl">
+            
             <img
               src="/src/assets/home-banner/banner-1.png"
               alt=""
               class="w-full h-auto"
             />
-          </div>
+          </div> -->
         </Slide>
 
         <Slide v-for="slide in 1" :key="slide">
