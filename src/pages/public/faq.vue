@@ -31,7 +31,7 @@
             />
           </svg>
         </button>
-        <div v-show="openFaqIndex === index" class="pb-4">
+        <div v-show="openFaqIndex === index" class="px-6 py-2">
           {{ faq.answer }}
         </div>
       </div>
@@ -45,23 +45,29 @@ import { ref } from "vue";
 const faqs = ref([
   {
     question: "Can I pay for my tattoo in installments (EMI)?",
-    answer: "Answer to EMI question goes here.",
+    answer:
+      "Yes, we offer EMI options for certain tattoo projects. This can be discussed during your consultation to find a payment plan that suits your budget.",
   },
   {
     question: "How are touch-ups or follow-up sessions priced?",
-    answer: "Answer about touch-ups pricing goes here.",
+    answer:
+      "Touch-ups within a certain period after your initial session are often included in the original price. For follow-up sessions beyond this period, additional charges may apply.",
   },
   {
     question: "Is a deposit required for booking a tattoo session?",
-    answer: "Answer about deposit requirement goes here.",
+    answer:
+      "Yes, we typically require a deposit to secure your appointment. This amount is deducted from the final cost of your tattoo.",
   },
   {
-    question: "Is a deposit required for booking a tattoo session?",
-    answer: "Answer about deposit requirement goes here.",
+    question:
+      "What factors might lead to a higher tattoo cost than initially estimated?",
+    answer:
+      "Factors include changes in design complexity, size increases, or additional color requests made after the initial consultation.",
   },
   {
-    question: "Is a deposit required for booking a tattoo session?",
-    answer: "Answer about deposit requirement goes here.",
+    question: "Is the cost of aftercare products included in the tattoo price?",
+    answer:
+      "The cost of aftercare products is typically not included in the tattoo price. We offer a range of aftercare products for purchase.",
   },
 ]);
 

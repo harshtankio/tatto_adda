@@ -8,15 +8,9 @@
         id="container-1"
         class="flex flex-col items-center justify-center py-4 text-white border-3"
       >
-        <!-- <div class="flex items-center justify-center px-4">
-          <p class="py-3 text-base font-bold text-white max-w-36">
-            Minimal Tattoo Designs
-          </p>
-          <p class="text-4xl italic font-bold">Rs. 1299</p>
-        </div> -->
         <div class="">
           <img
-            src="/public/flash-tattoo-img.jpeg"
+            src="/src/assets/designs/small-tattoo.jpg"
             alt="minimal-tattoo"
             class="w-full rounded-3xl"
           />
@@ -27,9 +21,11 @@
         class="flex flex-col items-center justify-center px-6 py-6 space-y-8 bg-transparent"
       >
         <p class="text-xl md:text-4xl">
-          20+ flash tattoos for you, Choose any 5 from this and get it in
+          20+ flash tattoos for you, Choose any from this and get it in
         </p>
-        <p class="text-5xl italic font-bold text-blue-800">Rs.4,XXX</p>
+        <p class="text-5xl italic font-bold text-blue-800">
+          Offer Price Rs 500/-
+        </p>
         <button class="py-3 border-2 border-blue-800 max-w-72">
           See Designs
         </button>
