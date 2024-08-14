@@ -1,5 +1,5 @@
 <template>
-  <div id="main-parent" class="container my-10">
+  <div id="main-parent" class="container my-10 text-black">
     <div
       id="main-container"
       class="flex flex-col items-start justify-between max-w-full px-10 py-10 bg-transparent border-2 border-blue-800 sm:flex-row rounded-3xl"

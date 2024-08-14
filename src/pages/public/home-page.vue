@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container text-black">
     <!-- Banner -->
     <homeBanner />
 
@@ -8,6 +8,9 @@
 
     <!-- minimal-tattoo-design -->
     <MinimalDesigns />
+
+    <!-- big-offer -->
+    <BigOffer />
 
     <!-- gallery / best work -->
     <bestWork />
@@ -37,6 +40,7 @@ import homeBanner from "./home-banner.vue";
 import Artists from "./artists.vue";
 import information from "./information.vue";
 import faq from "./faq.vue";
+import BigOffer from "./big-offer.vue";
 
 export default defineComponent({
   name: "WrapAround",
@@ -45,6 +49,7 @@ export default defineComponent({
     Slide,
     Navigation,
     MinimalDesigns,
+    BigOffer,
     OfferSection,
     bestWork,
     homeBanner,

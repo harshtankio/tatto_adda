@@ -7,12 +7,13 @@
           :key="slide"
           class="rounded-xl sm:rounded-3xl"
         >
-          <div class="max-w-full carousel__item rounded-xl sm:rounded-3xl">
-            <video autoplay="autoplay">
+          <div
+            class="w-full h-full max-w-full carousel__item rounded-xl sm:rounded-3xl"
+          >
+            <video autoplay="autoplay" loop class="w-full h-full">
               <source
                 src="/src/assets/Banners/SEATS OPEN FOR.mp4"
                 type="video/mp4"
-                class="w-full h-auto"
               />
             </video>
           </div>
@@ -27,21 +28,21 @@
         </Slide>
 
         <Slide v-for="slide in 1" :key="slide">
-          <div class="carousel__item rounded-xl sm:rounded-3xl">
+          <div class="h-full carousel__item rounded-xl sm:rounded-3xl">
             <img
               src="/src/assets/home-banner/banner-2.png"
               alt=""
-              class="w-full h-auto"
+              class="w-full h-full"
             />
           </div>
         </Slide>
 
         <Slide v-for="slide in 1" :key="slide">
-          <div class="carousel__item rounded-xl sm:rounded-3xl">
+          <div class="h-full carousel__item rounded-xl sm:rounded-3xl">
             <img
               src="/src/assets/home-banner/banner-3.png"
               alt=""
-              class="w-full h-auto"
+              class="w-full h-full"
             />
           </div>
         </Slide>

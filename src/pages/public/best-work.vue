@@ -10,13 +10,6 @@
             <Slide v-for="slide in 10" :key="slide" class="gap-2 rounded-lg">
               <div class="carousel__item">
                 <img
-                  src="/src/assets/best-work/best-1.jpg"
-                  alt="best-work-1"
-                  class="rounded-3xl"
-                />
-              </div>
-              <div class="carousel__item">
-                <img
                   src="/src/assets/best-work/best-2.jpg"
                   alt="best-work-1"
                   class="rounded-3xl"
