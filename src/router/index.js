@@ -7,6 +7,8 @@ import Mishal from "../pages/public/artists/mishal.vue";
 import Jay from "../pages/public/artists/jay.vue";
 import Milan from "../pages/public/artists/milan.vue";
 import Parth from "../pages/public/artists/parth.vue";
+import bigOfferDesigns from "../pages/see-desgins/big-offer-designs.vue";
+import minimalDesgins from "../pages/see-desgins/minimal-desgins.vue";
 
 const routes = [
   {
@@ -17,6 +19,14 @@ const routes = [
         name: "HomePage",
         path: "",
         component: HomePage,
+      },
+      {
+        path: "/bigOfferDesigns",
+        component: bigOfferDesigns,
+      },
+      {
+        path: "/minimalDesgins",
+        component: minimalDesgins,
       },
       // {
       //   name: "MinimalDesign",

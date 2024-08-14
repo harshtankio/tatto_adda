@@ -12,7 +12,10 @@
           20+ flash tattoos for you, Choose any 5 from this and get it in
         </p>
         <p class="text-5xl italic font-bold text-blue-800">Rs.15k</p>
-        <button class="py-3 border-2 border-blue-800 max-w-72">
+        <button
+          class="py-3 border-2 border-blue-800 max-w-72"
+          @click="goToDesignsPage"
+        >
           See Designs
         </button>
       </div>
@@ -31,3 +34,13 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    goToDesignsPage() {
+      this.$router.push("/bigOfferDesigns");
+    },
+  },
+};
+</script>
