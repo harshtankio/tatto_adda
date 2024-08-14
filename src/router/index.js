@@ -20,6 +20,7 @@ const routes = [
         path: "",
         component: HomePage,
       },
+
       {
         path: "/bigOfferDesigns",
         component: bigOfferDesigns,

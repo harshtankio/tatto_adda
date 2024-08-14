@@ -1,56 +1,26 @@
 <template>
   <div class="px-4 sm:px-0">
     <div class="mb-6 sm:mb-10">
-      <Carousel :autoplay="7000" :wrap-around="true">
-        <Slide
-          v-for="slide in 1"
-          :key="slide"
-          class="rounded-xl sm:rounded-3xl"
+      <div
+        ref="videoContainer"
+        class="w-full h-full max-w-full carousel__item rounded-xl sm:rounded-3xl"
+      >
+        <video
+          ref="lazyVideo"
+          loop
+          autoplay="autoplay"
+          muted
+          class="w-full h-full"
+          playsinline
+          :src="isIntersecting ? '/src/assets/Banners/banner-video.mp4' : ''"
         >
-          <div
-            class="w-full h-full max-w-full carousel__item rounded-xl sm:rounded-3xl"
-          >
-            <video autoplay="autoplay" loop class="w-full h-full">
-              <source
-                src="/src/assets/Banners/SEATS OPEN FOR.mp4"
-                type="video/mp4"
-              />
-            </video>
-          </div>
-          <!-- <div class="max-w-full carousel__item rounded-xl sm:rounded-3xl">
-            
-            <img
-              src="/src/assets/home-banner/banner-1.png"
-              alt=""
-              class="w-full h-auto"
-            />
-          </div> -->
-        </Slide>
-
-        <Slide v-for="slide in 1" :key="slide">
-          <div class="h-full carousel__item rounded-xl sm:rounded-3xl">
-            <img
-              src="/src/assets/home-banner/banner-2.png"
-              alt=""
-              class="w-full h-full"
-            />
-          </div>
-        </Slide>
-
-        <Slide v-for="slide in 1" :key="slide">
-          <div class="h-full carousel__item rounded-xl sm:rounded-3xl">
-            <img
-              src="/src/assets/home-banner/banner-3.png"
-              alt=""
-              class="w-full h-full"
-            />
-          </div>
-        </Slide>
-
-        <template #addons>
-          <Pagination />
-        </template>
-      </Carousel>
+          <source
+            v-if="isIntersecting"
+            src="/src/assets/Banners/banner-video.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
     </div>
     <div class="grid text-center place-items-center">
       <h2
@@ -59,28 +29,57 @@
         Let's craft your masterpiece together
       </h2>
       <div class="py-3">
-        <button
-          class="px-8 py-3 text-sm text-white bg-blue-800 rounded-lg sm:px-16 sm:py-4 sm:text-md"
-        >
-          Book Appointment
-        </button>
+        <a href="https://wa.link/2c1gtv" target="_blank">
+          <button
+            class="px-8 py-3 text-sm text-white bg-blue-800 rounded-lg sm:px-16 sm:py-4 sm:text-md"
+          >
+            Book Appointment
+          </button>
+        </a>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import { defineComponent } from "vue";
-import { Carousel, Slide, Pagination } from "vue3-carousel";
-
-import "vue3-carousel/dist/carousel.css";
+import { defineComponent, ref, onMounted, onUnmounted } from "vue";
 
 export default defineComponent({
   name: "Autoplay",
-  components: {
-    Carousel,
-    Slide,
-    Pagination,
+  setup() {
+    const videoContainer = ref(null);
+    const lazyVideo = ref(null);
+    const isIntersecting = ref(false);
+
+    const onIntersection = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          isIntersecting.value = true;
+          lazyVideo.value.play();
+        } else {
+          isIntersecting.value = false;
+          lazyVideo.value.pause();
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(onIntersection, {
+      threshold: 0.5,
+    });
+
+    onMounted(() => {
+      observer.observe(videoContainer.value);
+    });
+
+    onUnmounted(() => {
+      observer.disconnect();
+    });
+
+    return {
+      videoContainer,
+      lazyVideo,
+      isIntersecting,
+    };
   },
 });
 </script>
