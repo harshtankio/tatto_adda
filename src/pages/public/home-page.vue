@@ -1,10 +1,10 @@
 <template>
   <div class="container text-black">
     <!-- Banner -->
-    <homeBanner />
+    <homeBanner id="homeBanner" />
 
     <!-- personal-offer-section-->
-    <OfferSection />
+    <OfferSection id="OfferSection" />
 
     <!-- minimal-tattoo-design -->
     <MinimalDesigns />
@@ -13,18 +13,16 @@
     <BigOffer />
 
     <!-- gallery / best work -->
-    <bestWork />
+    <bestWork id="bestWork" />
 
     <!-- About us/ Our artists -->
-    <information />
+    <information id="Articles" />
 
-    <!-- About us/ Our artists -->
-    <Artists />
-
-    <!-- Testimonials/Review -->
+    <!-- Our Artists -->
+    <Artists id="about" />
 
     <!-- faq -->
-    <faq />
+    <faq id="faq" />
   </div>
 </template>
 
