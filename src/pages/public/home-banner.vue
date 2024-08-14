@@ -5,7 +5,7 @@
         ref="videoContainer"
         class="w-full h-full max-w-full carousel__item rounded-xl sm:rounded-3xl"
       >
-        <video
+        <!-- <video
           ref="lazyVideo"
           loop
           autoplay="autoplay"
@@ -19,6 +19,16 @@
             src="/src/assets/Banners/banner-video.mp4"
             type="video/mp4"
           />
+        </video> -->
+        <video
+          loop
+          autoplay="autoplay"
+          muted
+          class="w-full h-full"
+          playsinline
+          src="/src/assets/Banners/banner-video.mp4"
+        >
+          <source src="/src/assets/Banners/banner-video.mp4" type="video/mp4" />
         </video>
       </div>
     </div>
