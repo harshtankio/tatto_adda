@@ -29,7 +29,7 @@
         </div>
       </div>
 
-      <div class="space-y-6 text-center max-w-72">
+      <div class="space-y-6 max-w-72">
         <p class="py-4 text-2xl font-bold">Connect with us</p>
         <a href="https://www.instagram.com/tattooaddarajkot/" target="_blank"
           ><p class="text-lg font-semibold">Instagram</p></a

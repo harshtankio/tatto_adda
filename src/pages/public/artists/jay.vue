@@ -10,11 +10,6 @@
       <div>
         <h2 class="text-2xl font-bold">{{ artist.name }}</h2>
         <p class="mb-2 text-gray-600">{{ artist.description }}</p>
-        <button
-          class="px-4 py-2 transition border border-gray-300 rounded-full hover:bg-gray-100"
-        >
-          Meet The Artist
-        </button>
       </div>
     </div>
 
