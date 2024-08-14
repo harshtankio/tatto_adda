@@ -42,7 +42,7 @@ export default {
     return {
       artist: {
         name: "Mishal",
-        image: "/public/artists/mishal.JPG",
+        image: "/artists/mishal.JPG",
         description:
           "Meet our artist Mishal. He is humble, talented & skilled artist.",
         works: [
