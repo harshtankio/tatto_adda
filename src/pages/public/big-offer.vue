@@ -1,38 +1,31 @@
 <template>
-  <div id="main-parent" class="container">
-    <div id="main-container" class="flex items-center justify-center my-10">
-      <div class="flex flex-col gap-5 md:flex-row">
-        <div
-          id="container-2"
-          class="items-center justify-center flex-grow bg-center bg-no-repeat bg-cover border-2 border-blue-800 bg-slate-600 rounded-3xl bg-offer-image-2 bg-blend-overlay"
-        >
-          <div class="p-5 space-y-10 text-white">
-            <p class="text-3xl md:text-7xl">
-              The Tattoo Offer You've Always Wanted
-            </p>
-            <p class="w-2/3 max-w-full text-lg">
-              Rewards come to those who make good choices. Thank you for
-              visiting this page—now choose the offer that suits you perfectly!
-            </p>
-          </div>
-        </div>
-        <div
-          id="container-1"
-          class="px-6 py-5 border-2 border-blue-800 rounded-3xl"
-        >
-          <div class="text-xl italic tracking-wider md:text-5xl">
-            <p class="">GET</p>
-            <div class="flex">
-              <p class="text-2xl font-bold text-blue-800 md:text-5xl">
-                Personalised Offer
-              </p>
-              <p class="text-blue-800">*</p>
-            </div>
-            <p>on the table</p>
-          </div>
-          <div class="pt-10">
-            <button class="border-2 border-blue-800">Check Offers!</button>
-          </div>
+  <div id="main-parent" class="my-10">
+    <div
+      id="main-container"
+      class="flex flex-col grid-cols-2 px-5 py-10 border-2 border-blue-800 md:grid md:gap-20 rounded-3xl"
+    >
+      <div
+        id="container-2"
+        class="flex flex-col items-center justify-center px-6 py-6 space-y-8 bg-transparent"
+      >
+        <p class="text-xl md:text-4xl">
+          20+ flash tattoos for you, Choose any 5 from this and get it in
+        </p>
+        <p class="text-5xl italic font-bold text-blue-800">Rs.15k</p>
+        <button class="py-3 border-2 border-blue-800 max-w-72">
+          See Designs
+        </button>
+      </div>
+      <div
+        id="container-1"
+        class="flex flex-col items-center justify-center py-4 text-white border-3"
+      >
+        <div class="">
+          <img
+            src="/public/flash-tattoo-img.jpeg"
+            alt="minimal-tattoo"
+            class="w-full rounded-3xl"
+          />
         </div>
       </div>
     </div>
