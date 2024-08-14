@@ -42,34 +42,34 @@ export default {
     return {
       artist: {
         name: "Hemal Barot",
-        image: "/public/artists/hemal.JPG",
+        image: "/artists/hemal.JPG",
         description:
           "Meet our artist Hemal. He is humble, talented & skilled artist.",
         works: [
-          { image: "src/assets/hemal-portfolio/best-1.jpg" },
+          { image: "/hemal-portfolio/best-1.jpg" },
           {
-            image: "src/assets/hemal-portfolio/best-2.jpg",
+            image: "/hemal-portfolio/best-2.jpg",
           },
           {
-            image: "src/assets/hemal-portfolio/best-3.jpg",
+            image: "/hemal-portfolio/best-3.jpg",
           },
           {
-            image: "src/assets/hemal-portfolio/best-4.jpg",
+            image: "/hemal-portfolio/best-4.jpg",
           },
           {
-            image: "src/assets/hemal-portfolio/best-5.jpg",
+            image: "/hemal-portfolio/best-5.jpg",
           },
           {
-            image: "src/assets/hemal-portfolio/best-5.jpg",
+            image: "/hemal-portfolio/best-5.jpg",
           },
           {
-            image: "src/assets/hemal-portfolio/best-5.jpg",
+            image: "/hemal-portfolio/best-5.jpg",
           },
           {
-            image: "src/assets/hemal-portfolio/best-5.jpg",
+            image: "/hemal-portfolio/best-5.jpg",
           },
           {
-            image: "src/assets/hemal-portfolio/best-5.jpg",
+            image: "/hemal-portfolio/best-5.jpg",
           },
         ],
       },
