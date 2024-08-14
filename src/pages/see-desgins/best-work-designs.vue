@@ -30,12 +30,15 @@ export default {
         description:
           "Meet our artist Hemal. He is humble, talented & skilled artist.",
         works: [
-          { image: "src/assets/designs/big-1.jpg" },
-          { image: "src/assets/designs/big-2.jpg" },
-          { image: "src/assets/designs/big-3.jpg" },
-          { image: "src/assets/designs/big-4.jpg" },
-          { image: "src/assets/designs/big-2.jpg" },
-          { image: "src/assets/designs/big-1.jpg" },
+          { image: "src/assets/hemal/IMG_2292.JPG" },
+          { image: "src/assets/hemal/IMG_2586.JPG" },
+          { image: "src/assets/hemal/IMG_2671.JPG" },
+          { image: "src/assets/hemal/IMG_3728.JPG" },
+          { image: "src/assets/hemal/IMG_3765.JPG" },
+          { image: "src/assets/hemal/IMG_3932.JPG" },
+          { image: "src/assets/hemal/IMG_5150.JPG" },
+          { image: "src/assets/hemal/IMG_5898.JPG" },
+          { image: "src/assets/hemal/IMG_6382.JPG" },
         ],
       },
     };

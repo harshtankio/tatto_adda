@@ -44,7 +44,12 @@
         </div>
 
         <div class="flex items-center justify-center py-8">
-          <button class="px-8 py-3 border-2 border-blue-800">More Work</button>
+          <button
+            class="px-8 py-3 border-2 border-blue-800"
+            @click="goToDesignsPage"
+          >
+            More Work
+          </button>
         </div>
       </div>
     </div>
@@ -54,7 +59,6 @@
 <script>
 import { defineComponent } from "vue";
 import { Carousel, Navigation, Slide } from "vue3-carousel";
-
 import "vue3-carousel/dist/carousel.css";
 
 export default defineComponent({
@@ -63,6 +67,11 @@ export default defineComponent({
     Carousel,
     Slide,
     Navigation,
+  },
+  methods: {
+    goToDesignsPage() {
+      this.$router.push("/bestWorkDesigns");
+    },
   },
 });
 </script>
