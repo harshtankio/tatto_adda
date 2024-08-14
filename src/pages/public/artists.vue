@@ -59,12 +59,6 @@ export default {
           url: "milan",
         },
         {
-          name: "Mishal",
-          title: "(Designer) ",
-          image: "public/artists/mishal.jpg",
-          url: "mishal",
-        },
-        {
           name: "Parth",
           title: "(Art School Artist) ",
           image: "public/artists/parth.jpg",
