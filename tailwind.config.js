@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "offer-image": "url('src/assets/default/bg-offer.jpeg')",
-        "offer-image-2": "url('src/assets/default/bg-offer-2.jpeg')",
+        "offer-image": "url('src/assets/designs/bg-offer.jpeg')",
+        "offer-image-2": "url('src/assets/designs/bg-offer-2.jpeg')",
       },
       // container: {
       //   center: true,

@@ -9,6 +9,7 @@ import Milan from "../pages/public/artists/milan.vue";
 import Parth from "../pages/public/artists/parth.vue";
 import bigOfferDesigns from "../pages/see-desgins/big-offer-designs.vue";
 import minimalDesgins from "../pages/see-desgins/minimal-desgins.vue";
+import bestWorkDesigns from "../pages/see-desgins/best-work-designs.vue";
 
 const routes = [
   {
@@ -19,6 +20,10 @@ const routes = [
         name: "HomePage",
         path: "",
         component: HomePage,
+      },
+      {
+        path: "/bestWorkDesigns",
+        component: bestWorkDesigns,
       },
 
       {

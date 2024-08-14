@@ -87,12 +87,12 @@ export default {
             @click.prevent="scrollToSection('homeBanner')"
             >Home</a
           >
-          <a
+          <!-- <a
             href="#information"
             class="px-3 text-black"
             @click.prevent="scrollToSection('about')"
             >About</a
-          >
+          > -->
           <a
             href="#OfferSection"
             class="px-3 text-black"
@@ -111,12 +111,12 @@ export default {
             @click.prevent="scrollToSection('bestWork')"
             >Gallery</a
           >
-          <a
+          <!-- <a
             href="#Articles"
             class="px-3 text-black"
             @click.prevent="scrollToSection('Articles')"
             >Articles</a
-          >
+          > -->
         </nav>
       </div>
       <div class="sm:hidden">

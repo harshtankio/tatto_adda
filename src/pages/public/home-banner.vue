@@ -3,14 +3,14 @@
     <div class="mb-6 sm:mb-10">
       <div
         ref="videoContainer"
-        class="w-full h-full max-w-full carousel__item rounded-xl sm:rounded-3xl"
+        class="w-full h-full max-w-full rounded-xl sm:rounded-3xl"
       >
         <video
           ref="lazyVideo"
           loop
           autoplay="autoplay"
           muted
-          class="w-full h-full"
+          class="w-full h-2/5"
           playsinline
           :src="isIntersecting ? '/src/assets/Banners/banner-video.mp4' : ''"
         >
